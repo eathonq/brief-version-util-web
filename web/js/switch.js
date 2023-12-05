@@ -99,3 +99,34 @@ async function switchVersion(){
 
     alert("切换版本成功");
 }
+
+async function deleteVersion(){
+    
+    const projectNames = document.getElementById("projectNames");
+    const projectName = projectNames.value;
+
+    const projectVersions = document.getElementById("projectVersions");
+    const projectVersion = projectVersions.value;
+
+    if (projectName == "" || projectVersion == "") {
+        alert("请选择项目和版本");
+        return;
+    }
+
+    if(!confirm(`确定要删除项目 ${projectName} 的版本 ${projectVersion} 吗？`)){
+        return;
+    }
+
+    // 删除版本
+    const deleteVersionUrl = `${common.version_server}/version/delete/${projectName}?version=${projectVersion}`;
+    const deleteVersionResult = await common.http_get(deleteVersionUrl);
+    if (deleteVersionResult == null || deleteVersionResult.code != 0) {
+        alert(`删除版本失败：${deleteVersionResult.msg}`);
+        return;
+    }
+
+    // 刷新版本列表
+    updateVersionVersions(projectName);
+
+    alert("删除版本成功");
+}
