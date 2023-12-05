@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Home</title>
+
+</head>
+
+<body>
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-secondary" aria-current="page" href="#">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="upload.html">上传</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="switch.html">切换</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="plan.html">计划</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="log.html">日志</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="index.html">登录</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div style="margin-top: 25px;">
+            <table class="table table-striped" id="table_projects">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Project</th>
+                        <th scope="col">Version</th>
+                        <th scope="col">Running</th>
+                        <th scope="col">Created</th>
+                        <th scope="col">Updated</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 这里是动态添加的数据行 -->
+                    <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

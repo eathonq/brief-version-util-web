@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Version Plan</title>
+
+</head>
+
+<body>
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="home.html">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="upload.html">上传</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="switch.html">切换</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-secondary" aria-current="page" href="#">计划</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-dark" aria-current="page" href="log.html">日志</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="index.html">登录</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div style="margin-top: 25px;">
+            <div class="input-group">
+                <select id="projectNames" class="form-select"></select>
+                <select id="projectVersions" class="form-select"></select>
+                <input id="projectDate" class="form-control" type="date" value="2021-01-01">
+                <input id="projectTime" class="form-control" type="time">
+                <button type="button" class="btn btn-outline-secondary" onclick="planVersion()">计划</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/plan.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Login</title>
+
+</head>
+
+<body>
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+            
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link pix-2 link-secondary" href="#">登录</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div style="margin-top: 25px;">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="输入登录token" aria-label="输入登录token"
+                    aria-describedby="button-addon2" id="exampleInputToken1">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    onclick="validateToken()">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
