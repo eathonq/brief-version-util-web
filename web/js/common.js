@@ -1,4 +1,3 @@
-
 /**
  * 公共数据
  */
@@ -7,12 +6,12 @@ const common = {};
 /**
  * 文件服务器地址
  */
-common.file_server = 'http://127.0.0.1:2990';   // 本地测试 47.102.98.114:3000
+common.file_server = 'http://127.0.0.1:3000';
 
 /**
  * 版本服务器地址
  */
-common.version_server = 'http://127.0.0.1:2991';
+common.version_server = 'http://127.0.0.1:3001';
 
 /**
  * 常用枚举
